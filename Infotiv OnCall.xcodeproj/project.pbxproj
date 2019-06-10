@@ -1,0 +1,906 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C076E8CDC10121266B72ED24 /* Pods_Infotiv_OnCallUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60BEFE64E38474EEE282FE0F /* Pods_Infotiv_OnCallUITests.framework */; };
+		CA8655D732DDBD1E56D40071 /* Pods_Infotiv_OnCallTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBEDEE9CCD71624F37D46D46 /* Pods_Infotiv_OnCallTests.framework */; };
+		D948A6FF22953C3800BC6EC1 /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D948A6FE22953C3800BC6EC1 /* LocationTableViewCell.swift */; };
+		D948A7012295460E00BC6EC1 /* ControlTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D948A7002295460E00BC6EC1 /* ControlTableViewCell.swift */; };
+		D948A7032295671D00BC6EC1 /* EngineeringTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D948A7022295671D00BC6EC1 /* EngineeringTableViewCell.swift */; };
+		D948A705229576A300BC6EC1 /* DiagnosticsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D948A704229576A300BC6EC1 /* DiagnosticsTableViewCell.swift */; };
+		D948A7072296758800BC6EC1 /* HonkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D948A7062296758800BC6EC1 /* HonkButton.swift */; };
+		D95A0127228D79490090E8AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95A0126228D79490090E8AF /* AppDelegate.swift */; };
+		D95A0129228D79490090E8AF /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95A0128228D79490090E8AF /* MainPageViewController.swift */; };
+		D95A012C228D79490090E8AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95A012A228D79490090E8AF /* Main.storyboard */; };
+		D95A012E228D794B0090E8AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D95A012D228D794B0090E8AF /* Assets.xcassets */; };
+		D95A0131228D794B0090E8AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95A012F228D794B0090E8AF /* LaunchScreen.storyboard */; };
+		D95A013C228D794B0090E8AF /* Infotiv_OnCallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95A013B228D794B0090E8AF /* Infotiv_OnCallTests.swift */; };
+		D95A0147228D794B0090E8AF /* Infotiv_OnCallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95A0146228D794B0090E8AF /* Infotiv_OnCallUITests.swift */; };
+		D95A0156228D84B50090E8AF /* CarImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95A0155228D84B50090E8AF /* CarImage.swift */; };
+		D95A0159228D8C700090E8AF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95A0158228D8C700090E8AF /* Extensions.swift */; };
+		D95A015B228EA21E0090E8AF /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95A015A228EA21E0090E8AF /* MainTableViewCell.swift */; };
+		D95A0160229298E80090E8AF /* CarInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95A015F229298E80090E8AF /* CarInfoViewController.swift */; };
+		D95A016322929CF20090E8AF /* CarInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95A016222929CF20090E8AF /* CarInfo.storyboard */; };
+		D95A016B2292A8160090E8AF /* Climate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95A016A2292A8160090E8AF /* Climate.storyboard */; };
+		D95A016D2292A8250090E8AF /* Battery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95A016C2292A8250090E8AF /* Battery.storyboard */; };
+		D95A016F2292A8310090E8AF /* Engineering.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95A016E2292A8310090E8AF /* Engineering.storyboard */; };
+		D95A01712292A83B0090E8AF /* Location.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95A01702292A83B0090E8AF /* Location.storyboard */; };
+		D95A01732292A84B0090E8AF /* Diagnostics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95A01722292A84B0090E8AF /* Diagnostics.storyboard */; };
+		D95A01752292A8590090E8AF /* Control.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95A01742292A8590090E8AF /* Control.storyboard */; };
+		D95A01772292A87F0090E8AF /* ControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95A01762292A87F0090E8AF /* ControlViewController.swift */; };
+		D95A01792292A88D0090E8AF /* DiagnosticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95A01782292A88D0090E8AF /* DiagnosticsViewController.swift */; };
+		D95A017B2292A89A0090E8AF /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95A017A2292A89A0090E8AF /* LocationViewController.swift */; };
+		D95A017D2292A8A50090E8AF /* EngineeringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95A017C2292A8A50090E8AF /* EngineeringViewController.swift */; };
+		D95A017F2292A8AE0090E8AF /* BatteryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95A017E2292A8AE0090E8AF /* BatteryViewController.swift */; };
+		D95A01812292A8B70090E8AF /* ClimateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95A01802292A8B70090E8AF /* ClimateViewController.swift */; };
+		D95A01832292C3FB0090E8AF /* CellDatan.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95A01822292C3FB0090E8AF /* CellDatan.swift */; };
+		D95A01852292D7300090E8AF /* CarInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95A01842292D7300090E8AF /* CarInfoTableViewCell.swift */; };
+		D95A0187229407DE0090E8AF /* NewTimerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95A0186229407DE0090E8AF /* NewTimerButton.swift */; };
+		D95A018922940D1A0090E8AF /* ClimateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95A018822940D1A0090E8AF /* ClimateTableViewCell.swift */; };
+		D95A018B22942A790090E8AF /* BatteryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95A018A22942A790090E8AF /* BatteryTableViewCell.swift */; };
+		D9B3357C229D5141001F7B3F /* RemoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9B3357B229D5141001F7B3F /* RemoteViewController.swift */; };
+		E82069247CCF2D1AA73210F6 /* Pods_Infotiv_OnCall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B5AC8C4828C30BAA91615CF /* Pods_Infotiv_OnCall.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D95A0138228D794B0090E8AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D95A011B228D79490090E8AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D95A0122228D79490090E8AF;
+			remoteInfo = "Infotiv OnCall";
+		};
+		D95A0143228D794B0090E8AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D95A011B228D79490090E8AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D95A0122228D79490090E8AF;
+			remoteInfo = "Infotiv OnCall";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C1431818E6CC5BEC49DA8D0 /* Pods-Infotiv OnCall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infotiv OnCall.debug.xcconfig"; path = "Target Support Files/Pods-Infotiv OnCall/Pods-Infotiv OnCall.debug.xcconfig"; sourceTree = "<group>"; };
+		3B5AC8C4828C30BAA91615CF /* Pods_Infotiv_OnCall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Infotiv_OnCall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60BEFE64E38474EEE282FE0F /* Pods_Infotiv_OnCallUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Infotiv_OnCallUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		677CF96F62A27D8D5BB7765F /* Pods-Infotiv OnCallUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infotiv OnCallUITests.debug.xcconfig"; path = "Target Support Files/Pods-Infotiv OnCallUITests/Pods-Infotiv OnCallUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B367A6B4AAA8642AAB5FD3C6 /* Pods-Infotiv OnCallTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infotiv OnCallTests.release.xcconfig"; path = "Target Support Files/Pods-Infotiv OnCallTests/Pods-Infotiv OnCallTests.release.xcconfig"; sourceTree = "<group>"; };
+		C863BFBA123C06A428C4956B /* Pods-Infotiv OnCall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infotiv OnCall.release.xcconfig"; path = "Target Support Files/Pods-Infotiv OnCall/Pods-Infotiv OnCall.release.xcconfig"; sourceTree = "<group>"; };
+		D948A6FE22953C3800BC6EC1 /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
+		D948A7002295460E00BC6EC1 /* ControlTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlTableViewCell.swift; sourceTree = "<group>"; };
+		D948A7022295671D00BC6EC1 /* EngineeringTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineeringTableViewCell.swift; sourceTree = "<group>"; };
+		D948A704229576A300BC6EC1 /* DiagnosticsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosticsTableViewCell.swift; sourceTree = "<group>"; };
+		D948A7062296758800BC6EC1 /* HonkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HonkButton.swift; sourceTree = "<group>"; };
+		D95A0123228D79490090E8AF /* Infotiv OnCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Infotiv OnCall.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D95A0126228D79490090E8AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D95A0128228D79490090E8AF /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		D95A012B228D79490090E8AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D95A012D228D794B0090E8AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D95A0130228D794B0090E8AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D95A0132228D794B0090E8AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D95A0137228D794B0090E8AF /* Infotiv OnCallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Infotiv OnCallTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D95A013B228D794B0090E8AF /* Infotiv_OnCallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Infotiv_OnCallTests.swift; sourceTree = "<group>"; };
+		D95A013D228D794B0090E8AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D95A0142228D794B0090E8AF /* Infotiv OnCallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Infotiv OnCallUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D95A0146228D794B0090E8AF /* Infotiv_OnCallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Infotiv_OnCallUITests.swift; sourceTree = "<group>"; };
+		D95A0148228D794B0090E8AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D95A0155228D84B50090E8AF /* CarImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarImage.swift; sourceTree = "<group>"; };
+		D95A0158228D8C700090E8AF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D95A015A228EA21E0090E8AF /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		D95A015F229298E80090E8AF /* CarInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarInfoViewController.swift; sourceTree = "<group>"; };
+		D95A016222929CF20090E8AF /* CarInfo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CarInfo.storyboard; sourceTree = "<group>"; };
+		D95A016A2292A8160090E8AF /* Climate.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Climate.storyboard; sourceTree = "<group>"; };
+		D95A016C2292A8250090E8AF /* Battery.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Battery.storyboard; sourceTree = "<group>"; };
+		D95A016E2292A8310090E8AF /* Engineering.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Engineering.storyboard; sourceTree = "<group>"; };
+		D95A01702292A83B0090E8AF /* Location.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Location.storyboard; sourceTree = "<group>"; };
+		D95A01722292A84B0090E8AF /* Diagnostics.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Diagnostics.storyboard; sourceTree = "<group>"; };
+		D95A01742292A8590090E8AF /* Control.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Control.storyboard; sourceTree = "<group>"; };
+		D95A01762292A87F0090E8AF /* ControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlViewController.swift; sourceTree = "<group>"; };
+		D95A01782292A88D0090E8AF /* DiagnosticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiagnosticsViewController.swift; sourceTree = "<group>"; };
+		D95A017A2292A89A0090E8AF /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		D95A017C2292A8A50090E8AF /* EngineeringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineeringViewController.swift; sourceTree = "<group>"; };
+		D95A017E2292A8AE0090E8AF /* BatteryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryViewController.swift; sourceTree = "<group>"; };
+		D95A01802292A8B70090E8AF /* ClimateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimateViewController.swift; sourceTree = "<group>"; };
+		D95A01822292C3FB0090E8AF /* CellDatan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellDatan.swift; sourceTree = "<group>"; };
+		D95A01842292D7300090E8AF /* CarInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarInfoTableViewCell.swift; sourceTree = "<group>"; };
+		D95A0186229407DE0090E8AF /* NewTimerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTimerButton.swift; sourceTree = "<group>"; };
+		D95A018822940D1A0090E8AF /* ClimateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimateTableViewCell.swift; sourceTree = "<group>"; };
+		D95A018A22942A790090E8AF /* BatteryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryTableViewCell.swift; sourceTree = "<group>"; };
+		D962E74822A95AF00058CE7D /* city.plist.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = city.plist.json; sourceTree = "<group>"; };
+		D9B3357B229D5141001F7B3F /* RemoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteViewController.swift; sourceTree = "<group>"; };
+		DAE4FC44673B331CB108AC4D /* Pods-Infotiv OnCallUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infotiv OnCallUITests.release.xcconfig"; path = "Target Support Files/Pods-Infotiv OnCallUITests/Pods-Infotiv OnCallUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EBEDEE9CCD71624F37D46D46 /* Pods_Infotiv_OnCallTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Infotiv_OnCallTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDC4CA73A3C85E8946986906 /* Pods-Infotiv OnCallTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infotiv OnCallTests.debug.xcconfig"; path = "Target Support Files/Pods-Infotiv OnCallTests/Pods-Infotiv OnCallTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D95A0120228D79490090E8AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E82069247CCF2D1AA73210F6 /* Pods_Infotiv_OnCall.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D95A0134228D794B0090E8AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA8655D732DDBD1E56D40071 /* Pods_Infotiv_OnCallTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D95A013F228D794B0090E8AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C076E8CDC10121266B72ED24 /* Pods_Infotiv_OnCallUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D3B87BE17E1FC6C8BD8EBD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B5AC8C4828C30BAA91615CF /* Pods_Infotiv_OnCall.framework */,
+				EBEDEE9CCD71624F37D46D46 /* Pods_Infotiv_OnCallTests.framework */,
+				60BEFE64E38474EEE282FE0F /* Pods_Infotiv_OnCallUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D95A011A228D79490090E8AF = {
+			isa = PBXGroup;
+			children = (
+				D95A0125228D79490090E8AF /* Infotiv OnCall */,
+				D95A013A228D794B0090E8AF /* Infotiv OnCallTests */,
+				D95A0145228D794B0090E8AF /* Infotiv OnCallUITests */,
+				D95A0124228D79490090E8AF /* Products */,
+				FB40D641A8A97A4488604016 /* Pods */,
+				6D3B87BE17E1FC6C8BD8EBD8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D95A0124228D79490090E8AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D95A0123228D79490090E8AF /* Infotiv OnCall.app */,
+				D95A0137228D794B0090E8AF /* Infotiv OnCallTests.xctest */,
+				D95A0142228D794B0090E8AF /* Infotiv OnCallUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D95A0125228D79490090E8AF /* Infotiv OnCall */ = {
+			isa = PBXGroup;
+			children = (
+				D95A016922929F2B0090E8AF /* ControlStoryboard */,
+				D95A016722929EE70090E8AF /* DiagnosticsStoryboard */,
+				D95A016622929EDB0090E8AF /* LocationStoryboard */,
+				D95A016522929E900090E8AF /* EngineeringStoryboard */,
+				D95A016422929E7C0090E8AF /* BatteryStoryboard */,
+				D95A01612292991F0090E8AF /* ClimateStoryboard */,
+				D95A015E229298B50090E8AF /* CarInfoStoryboard */,
+				D95A0157228D8C570090E8AF /* SpecialSwifts */,
+				D95A0154228D849A0090E8AF /* MainPageSwifts */,
+				D95A0126228D79490090E8AF /* AppDelegate.swift */,
+				D95A0128228D79490090E8AF /* MainPageViewController.swift */,
+				D95A012A228D79490090E8AF /* Main.storyboard */,
+				D95A012D228D794B0090E8AF /* Assets.xcassets */,
+				D95A012F228D794B0090E8AF /* LaunchScreen.storyboard */,
+				D95A0132228D794B0090E8AF /* Info.plist */,
+				D962E74822A95AF00058CE7D /* city.plist.json */,
+			);
+			path = "Infotiv OnCall";
+			sourceTree = "<group>";
+		};
+		D95A013A228D794B0090E8AF /* Infotiv OnCallTests */ = {
+			isa = PBXGroup;
+			children = (
+				D95A013B228D794B0090E8AF /* Infotiv_OnCallTests.swift */,
+				D95A013D228D794B0090E8AF /* Info.plist */,
+			);
+			path = "Infotiv OnCallTests";
+			sourceTree = "<group>";
+		};
+		D95A0145228D794B0090E8AF /* Infotiv OnCallUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D95A0146228D794B0090E8AF /* Infotiv_OnCallUITests.swift */,
+				D95A0148228D794B0090E8AF /* Info.plist */,
+			);
+			path = "Infotiv OnCallUITests";
+			sourceTree = "<group>";
+		};
+		D95A0154228D849A0090E8AF /* MainPageSwifts */ = {
+			isa = PBXGroup;
+			children = (
+				D95A0155228D84B50090E8AF /* CarImage.swift */,
+				D95A015A228EA21E0090E8AF /* MainTableViewCell.swift */,
+			);
+			path = MainPageSwifts;
+			sourceTree = "<group>";
+		};
+		D95A0157228D8C570090E8AF /* SpecialSwifts */ = {
+			isa = PBXGroup;
+			children = (
+				D95A0158228D8C700090E8AF /* Extensions.swift */,
+				D95A01822292C3FB0090E8AF /* CellDatan.swift */,
+			);
+			path = SpecialSwifts;
+			sourceTree = "<group>";
+		};
+		D95A015E229298B50090E8AF /* CarInfoStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				D95A016222929CF20090E8AF /* CarInfo.storyboard */,
+				D95A015F229298E80090E8AF /* CarInfoViewController.swift */,
+				D95A01842292D7300090E8AF /* CarInfoTableViewCell.swift */,
+			);
+			path = CarInfoStoryboard;
+			sourceTree = "<group>";
+		};
+		D95A01612292991F0090E8AF /* ClimateStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				D95A016A2292A8160090E8AF /* Climate.storyboard */,
+				D95A01802292A8B70090E8AF /* ClimateViewController.swift */,
+				D95A0186229407DE0090E8AF /* NewTimerButton.swift */,
+				D95A018822940D1A0090E8AF /* ClimateTableViewCell.swift */,
+			);
+			path = ClimateStoryboard;
+			sourceTree = "<group>";
+		};
+		D95A016422929E7C0090E8AF /* BatteryStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				D95A016C2292A8250090E8AF /* Battery.storyboard */,
+				D95A017E2292A8AE0090E8AF /* BatteryViewController.swift */,
+				D95A018A22942A790090E8AF /* BatteryTableViewCell.swift */,
+			);
+			path = BatteryStoryboard;
+			sourceTree = "<group>";
+		};
+		D95A016522929E900090E8AF /* EngineeringStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				D95A016E2292A8310090E8AF /* Engineering.storyboard */,
+				D95A017C2292A8A50090E8AF /* EngineeringViewController.swift */,
+				D948A7022295671D00BC6EC1 /* EngineeringTableViewCell.swift */,
+				D9B3357B229D5141001F7B3F /* RemoteViewController.swift */,
+			);
+			path = EngineeringStoryboard;
+			sourceTree = "<group>";
+		};
+		D95A016622929EDB0090E8AF /* LocationStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				D95A01702292A83B0090E8AF /* Location.storyboard */,
+				D95A017A2292A89A0090E8AF /* LocationViewController.swift */,
+				D948A6FE22953C3800BC6EC1 /* LocationTableViewCell.swift */,
+			);
+			path = LocationStoryboard;
+			sourceTree = "<group>";
+		};
+		D95A016722929EE70090E8AF /* DiagnosticsStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				D95A01722292A84B0090E8AF /* Diagnostics.storyboard */,
+				D95A01782292A88D0090E8AF /* DiagnosticsViewController.swift */,
+				D948A704229576A300BC6EC1 /* DiagnosticsTableViewCell.swift */,
+			);
+			name = DiagnosticsStoryboard;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		D95A016922929F2B0090E8AF /* ControlStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				D95A01742292A8590090E8AF /* Control.storyboard */,
+				D95A01762292A87F0090E8AF /* ControlViewController.swift */,
+				D948A7002295460E00BC6EC1 /* ControlTableViewCell.swift */,
+				D948A7062296758800BC6EC1 /* HonkButton.swift */,
+			);
+			path = ControlStoryboard;
+			sourceTree = "<group>";
+		};
+		FB40D641A8A97A4488604016 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C1431818E6CC5BEC49DA8D0 /* Pods-Infotiv OnCall.debug.xcconfig */,
+				C863BFBA123C06A428C4956B /* Pods-Infotiv OnCall.release.xcconfig */,
+				FDC4CA73A3C85E8946986906 /* Pods-Infotiv OnCallTests.debug.xcconfig */,
+				B367A6B4AAA8642AAB5FD3C6 /* Pods-Infotiv OnCallTests.release.xcconfig */,
+				677CF96F62A27D8D5BB7765F /* Pods-Infotiv OnCallUITests.debug.xcconfig */,
+				DAE4FC44673B331CB108AC4D /* Pods-Infotiv OnCallUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D95A0122228D79490090E8AF /* Infotiv OnCall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D95A014B228D794B0090E8AF /* Build configuration list for PBXNativeTarget "Infotiv OnCall" */;
+			buildPhases = (
+				2B1ADA79DF592FE93FF268CE /* [CP] Check Pods Manifest.lock */,
+				D95A011F228D79490090E8AF /* Sources */,
+				D95A0120228D79490090E8AF /* Frameworks */,
+				D95A0121228D79490090E8AF /* Resources */,
+				CF2719E1E73BDF1B11AF7AA8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Infotiv OnCall";
+			productName = "Infotiv OnCall";
+			productReference = D95A0123228D79490090E8AF /* Infotiv OnCall.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D95A0136228D794B0090E8AF /* Infotiv OnCallTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D95A014E228D794B0090E8AF /* Build configuration list for PBXNativeTarget "Infotiv OnCallTests" */;
+			buildPhases = (
+				22BE6FD2B00A16F962A9ECE7 /* [CP] Check Pods Manifest.lock */,
+				D95A0133228D794B0090E8AF /* Sources */,
+				D95A0134228D794B0090E8AF /* Frameworks */,
+				D95A0135228D794B0090E8AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D95A0139228D794B0090E8AF /* PBXTargetDependency */,
+			);
+			name = "Infotiv OnCallTests";
+			productName = "Infotiv OnCallTests";
+			productReference = D95A0137228D794B0090E8AF /* Infotiv OnCallTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D95A0141228D794B0090E8AF /* Infotiv OnCallUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D95A0151228D794B0090E8AF /* Build configuration list for PBXNativeTarget "Infotiv OnCallUITests" */;
+			buildPhases = (
+				761300BA70078EB53C60D94C /* [CP] Check Pods Manifest.lock */,
+				D95A013E228D794B0090E8AF /* Sources */,
+				D95A013F228D794B0090E8AF /* Frameworks */,
+				D95A0140228D794B0090E8AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D95A0144228D794B0090E8AF /* PBXTargetDependency */,
+			);
+			name = "Infotiv OnCallUITests";
+			productName = "Infotiv OnCallUITests";
+			productReference = D95A0142228D794B0090E8AF /* Infotiv OnCallUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D95A011B228D79490090E8AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Infotiv AB";
+				TargetAttributes = {
+					D95A0122228D79490090E8AF = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					D95A0136228D794B0090E8AF = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = D95A0122228D79490090E8AF;
+					};
+					D95A0141228D794B0090E8AF = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = D95A0122228D79490090E8AF;
+					};
+				};
+			};
+			buildConfigurationList = D95A011E228D79490090E8AF /* Build configuration list for PBXProject "Infotiv OnCall" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D95A011A228D79490090E8AF;
+			productRefGroup = D95A0124228D79490090E8AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D95A0122228D79490090E8AF /* Infotiv OnCall */,
+				D95A0136228D794B0090E8AF /* Infotiv OnCallTests */,
+				D95A0141228D794B0090E8AF /* Infotiv OnCallUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D95A0121228D79490090E8AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D95A01752292A8590090E8AF /* Control.storyboard in Resources */,
+				D95A016D2292A8250090E8AF /* Battery.storyboard in Resources */,
+				D95A0131228D794B0090E8AF /* LaunchScreen.storyboard in Resources */,
+				D95A012E228D794B0090E8AF /* Assets.xcassets in Resources */,
+				D95A01712292A83B0090E8AF /* Location.storyboard in Resources */,
+				D95A012C228D79490090E8AF /* Main.storyboard in Resources */,
+				D95A016B2292A8160090E8AF /* Climate.storyboard in Resources */,
+				D95A016F2292A8310090E8AF /* Engineering.storyboard in Resources */,
+				D95A01732292A84B0090E8AF /* Diagnostics.storyboard in Resources */,
+				D95A016322929CF20090E8AF /* CarInfo.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D95A0135228D794B0090E8AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D95A0140228D794B0090E8AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22BE6FD2B00A16F962A9ECE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Infotiv OnCallTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B1ADA79DF592FE93FF268CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Infotiv OnCall-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		761300BA70078EB53C60D94C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Infotiv OnCallUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF2719E1E73BDF1B11AF7AA8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Infotiv OnCall/Pods-Infotiv OnCall-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Infotiv OnCall/Pods-Infotiv OnCall-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Infotiv OnCall/Pods-Infotiv OnCall-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D95A011F228D79490090E8AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D95A01852292D7300090E8AF /* CarInfoTableViewCell.swift in Sources */,
+				D948A7012295460E00BC6EC1 /* ControlTableViewCell.swift in Sources */,
+				D95A0156228D84B50090E8AF /* CarImage.swift in Sources */,
+				D95A017F2292A8AE0090E8AF /* BatteryViewController.swift in Sources */,
+				D948A705229576A300BC6EC1 /* DiagnosticsTableViewCell.swift in Sources */,
+				D95A01792292A88D0090E8AF /* DiagnosticsViewController.swift in Sources */,
+				D95A018B22942A790090E8AF /* BatteryTableViewCell.swift in Sources */,
+				D95A017D2292A8A50090E8AF /* EngineeringViewController.swift in Sources */,
+				D948A7032295671D00BC6EC1 /* EngineeringTableViewCell.swift in Sources */,
+				D95A01832292C3FB0090E8AF /* CellDatan.swift in Sources */,
+				D95A015B228EA21E0090E8AF /* MainTableViewCell.swift in Sources */,
+				D95A0129228D79490090E8AF /* MainPageViewController.swift in Sources */,
+				D95A0160229298E80090E8AF /* CarInfoViewController.swift in Sources */,
+				D9B3357C229D5141001F7B3F /* RemoteViewController.swift in Sources */,
+				D95A0127228D79490090E8AF /* AppDelegate.swift in Sources */,
+				D95A01812292A8B70090E8AF /* ClimateViewController.swift in Sources */,
+				D948A6FF22953C3800BC6EC1 /* LocationTableViewCell.swift in Sources */,
+				D95A018922940D1A0090E8AF /* ClimateTableViewCell.swift in Sources */,
+				D95A017B2292A89A0090E8AF /* LocationViewController.swift in Sources */,
+				D95A0187229407DE0090E8AF /* NewTimerButton.swift in Sources */,
+				D95A0159228D8C700090E8AF /* Extensions.swift in Sources */,
+				D95A01772292A87F0090E8AF /* ControlViewController.swift in Sources */,
+				D948A7072296758800BC6EC1 /* HonkButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D95A0133228D794B0090E8AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D95A013C228D794B0090E8AF /* Infotiv_OnCallTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D95A013E228D794B0090E8AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D95A0147228D794B0090E8AF /* Infotiv_OnCallUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D95A0139228D794B0090E8AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D95A0122228D79490090E8AF /* Infotiv OnCall */;
+			targetProxy = D95A0138228D794B0090E8AF /* PBXContainerItemProxy */;
+		};
+		D95A0144228D794B0090E8AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D95A0122228D79490090E8AF /* Infotiv OnCall */;
+			targetProxy = D95A0143228D794B0090E8AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D95A012A228D79490090E8AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D95A012B228D79490090E8AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D95A012F228D794B0090E8AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D95A0130228D794B0090E8AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D95A0149228D794B0090E8AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D95A014A228D794B0090E8AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D95A014C228D794B0090E8AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C1431818E6CC5BEC49DA8D0 /* Pods-Infotiv OnCall.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Infotiv OnCall/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Schwimpy.Infotiv-OnCall";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D95A014D228D794B0090E8AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C863BFBA123C06A428C4956B /* Pods-Infotiv OnCall.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Infotiv OnCall/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Schwimpy.Infotiv-OnCall";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D95A014F228D794B0090E8AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDC4CA73A3C85E8946986906 /* Pods-Infotiv OnCallTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Infotiv OnCallTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Schwimpy.Infotiv-OnCallTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Infotiv OnCall.app/Infotiv OnCall";
+			};
+			name = Debug;
+		};
+		D95A0150228D794B0090E8AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B367A6B4AAA8642AAB5FD3C6 /* Pods-Infotiv OnCallTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Infotiv OnCallTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Schwimpy.Infotiv-OnCallTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Infotiv OnCall.app/Infotiv OnCall";
+			};
+			name = Release;
+		};
+		D95A0152228D794B0090E8AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 677CF96F62A27D8D5BB7765F /* Pods-Infotiv OnCallUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Infotiv OnCallUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Schwimpy.Infotiv-OnCallUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Infotiv OnCall";
+			};
+			name = Debug;
+		};
+		D95A0153228D794B0090E8AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAE4FC44673B331CB108AC4D /* Pods-Infotiv OnCallUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Infotiv OnCallUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Schwimpy.Infotiv-OnCallUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Infotiv OnCall";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D95A011E228D79490090E8AF /* Build configuration list for PBXProject "Infotiv OnCall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D95A0149228D794B0090E8AF /* Debug */,
+				D95A014A228D794B0090E8AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D95A014B228D794B0090E8AF /* Build configuration list for PBXNativeTarget "Infotiv OnCall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D95A014C228D794B0090E8AF /* Debug */,
+				D95A014D228D794B0090E8AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D95A014E228D794B0090E8AF /* Build configuration list for PBXNativeTarget "Infotiv OnCallTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D95A014F228D794B0090E8AF /* Debug */,
+				D95A0150228D794B0090E8AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D95A0151228D794B0090E8AF /* Build configuration list for PBXNativeTarget "Infotiv OnCallUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D95A0152228D794B0090E8AF /* Debug */,
+				D95A0153228D794B0090E8AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D95A011B228D79490090E8AF /* Project object */;
+}

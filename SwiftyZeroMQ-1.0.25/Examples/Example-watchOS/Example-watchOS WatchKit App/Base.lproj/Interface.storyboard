@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Example_watchOS_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="center" text="Version:" id="L1i-4p-ofy">
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                        <label alignment="center" text="..." id="gAS-6i-inC" userLabel="line 1">
+                            <fontDescription key="font" type="system" pointSize="8"/>
+                        </label>
+                        <label alignment="center" text="..." id="JSO-vE-gwz" userLabel="line 2">
+                            <fontDescription key="font" type="system" pointSize="8"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="versionLine1" destination="gAS-6i-inC" id="Mif-fr-7r8"/>
+                        <outlet property="versionLine2" destination="JSO-vE-gwz" id="yTd-VY-uBs"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
